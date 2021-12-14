@@ -1,0 +1,99 @@
+
+*{
+    box-sizing: border-box;
+    align-items: center;
+}
+
+:root {
+    --primary-background: #08470b;
+    --secondary-background: #FFFFF4;
+    --chrome-background: #04492c;
+    --text-color: #f50909;
+    --accent-light: #04522b;
+    --accent-dark: #0e0b08a8;
+
+    --padding:25px;
+}
+
+body {
+    /* style */
+    background-image: url(https://www.blogwithmom.com/wp-content/uploads/2012/12/christmas-tree.jpg);
+    background-size: cover;
+    font-family:'Cochin';
+    color: var(--text-color);
+
+    /*layout */
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+}
+
+header{
+    background: var(--chrome-background);
+    padding: var(--padding);
+}
+h1 {
+    margin: 300;
+    font-size: 100px;
+    text-align: center;
+  }
+
+  
+  main {
+    padding: var(--padding);
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;  
+  }
+  
+  li {
+    width: 350px;
+    height: 350px;
+    display: grid;
+    grid-template-rows: autos 1fr auto;
+    place-items: center;
+    background: #0f0f01c9;
+    border: 5px solid var(--accent-dark);
+    box-shadow: rgba(25, 223, 130, 0.2) 0px 7px 29px 0px;
+    transition: all 250ms ease-in;
+    
+  }
+  
+  li:hover {
+    box-shadow: rgba(39, 179, 97, 0.35) 0px 5px 15px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  img {
+    width: 264px;
+    height: 200px;
+  }
+  
+  button {
+    width: 133px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    
+  }
+  
+  button:hover {
+    width: 200px;
+  }
+  
+  button:active {
+    background: var(--accent-light);
+  }
+  
+  
+  footer {
+    background: var(--secondary-background);
+    opacity: 1.75;
+    padding: 5px var(--padding);
+  }
